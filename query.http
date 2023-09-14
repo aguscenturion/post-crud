@@ -1,0 +1,23 @@
+###
+GET http://localhost:3000/api/posts
+
+### 
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+    "title" : "tercer posteo",
+    "content" : "nuevo contenido",
+    "link" : "https://www.solofondos.com/wp-content/uploads/2015/04/Fondos-de-paisajes.jpg"
+}
+
+### 
+PUT http://localhost:3000/api/posts/4
+Content-Type: application/json
+
+{
+    "link" : "https://mott.pe/noticias/wp-content/uploads/2019/03/los-50-paisajes-maravillosos-del-mundo-para-tomar-fotos.jpg"
+}
+
+### 
+DELETE http://localhost:3000/api/posts/11
